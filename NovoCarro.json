@@ -1,0 +1,17 @@
+[
+    {
+        "modelo": "uno",
+        "marca": "fiat",
+        "cor": "amarelo"
+    },
+    {
+        "modelo": "gol",
+        "marca": "volks",
+        "cor": "preto"
+    },
+    {
+        "modelo": "chevet",
+        "marca": "volks",
+        "cor": "azul"
+    }
+]
