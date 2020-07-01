@@ -11,18 +11,8 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/${pesquisa}`)
 
      insereHabilidades(resposta.data.abilities); 
      insereTipos(resposta.data.types)
-    
-
-     
-function salvaPokemon(){
-    var pokemons = []
-    var opcao = rs.keyInYN('Quer guardar seu pokemon na pokedex?')
-    if(opcao){
-        pokemons = JSON.parse(fs.readFileSync("./pokemons.json"))
-        pokemons.push(pokemon)
-        fs.writeFileSync("./pokemons.json",JSON.stringify(pokemons))
-    }
-}
+     console.log(pokemon)
+     salvaPokemon()
 
     
 } )
@@ -43,3 +33,12 @@ function insereTipos(types) {
     });
 }
 
+function salvaPokemon(){
+    var pokemons = []
+    var opcao = rs.keyInYN('Quer guardar seu pokemon na pokedex?')
+    if(opcao){
+        pokemons = JSON.parse(fs.readFileSync("./pokemons.json"))
+        pokemons.push(pokemon)
+        fs.writeFileSync("./pokemons.json",JSON.stringify(pokemons))
+    }
+}
