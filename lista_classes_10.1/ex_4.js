@@ -17,7 +17,7 @@ class MotoristaDoApp {
 
     }
     DarBoasVindasAoMotorista() {
-        console.log(`Seja bem vindo(a) colaborador(a) ${this.name}`)
+        console.log(`Seja bem vindo(a) colaborador(a) ${this.nome}`)
     }
 
     ApresentarCarroDoMotorista() {
